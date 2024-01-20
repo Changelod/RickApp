@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showImage = true
-
+//    @ObservedObject var viewModel = HomeViewModel()
 var body: some View {
     NavigationView{
         VStack{
@@ -18,6 +18,11 @@ var body: some View {
                     .scaledToFit()
                 Spacer()
             }
+            Image("")
+                .resizable()
+                .frame(width: 120, height: 120)
+                .aspectRatio(contentMode: .fill)
+                .foregroundColor(.blue)
             CharacterGridView()
                 .onTapGesture {
                     showImage = false                }
@@ -29,4 +34,7 @@ var body: some View {
 #Preview{
     HomeView()
 }
+
+
+
 
