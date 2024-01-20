@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F528A0622B5BC2A2001F8AC4 /* CharacterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */; };
 		F5364C0E2B5BB3D200D1E488 /* RickAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */; };
-		F5364C102B5BB3D200D1E488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5364C0F2B5BB3D200D1E488 /* ContentView.swift */; };
+		F5364C102B5BB3D200D1E488 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5364C0F2B5BB3D200D1E488 /* HomeView.swift */; };
 		F5364C122B5BB3D500D1E488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5364C112B5BB3D500D1E488 /* Assets.xcassets */; };
 		F5364C152B5BB3D500D1E488 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5364C142B5BB3D500D1E488 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridView.swift; sourceTree = "<group>"; };
 		F5364C0A2B5BB3D200D1E488 /* RickApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAppApp.swift; sourceTree = "<group>"; };
-		F5364C0F2B5BB3D200D1E488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5364C0F2B5BB3D200D1E488 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F5364C112B5BB3D500D1E488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5364C142B5BB3D500D1E488 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */,
-				F5364C0F2B5BB3D200D1E488 /* ContentView.swift */,
+				F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */,
+				F5364C0F2B5BB3D200D1E488 /* HomeView.swift */,
 				F5364C112B5BB3D500D1E488 /* Assets.xcassets */,
 				F5364C132B5BB3D500D1E488 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5364C102B5BB3D200D1E488 /* ContentView.swift in Sources */,
+				F528A0622B5BC2A2001F8AC4 /* CharacterGridView.swift in Sources */,
+				F5364C102B5BB3D200D1E488 /* HomeView.swift in Sources */,
 				F5364C0E2B5BB3D200D1E488 /* RickAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
