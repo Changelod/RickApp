@@ -10,7 +10,7 @@
 		F528A0622B5BC2A2001F8AC4 /* CharacterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */; };
 		F528A0642B5BCDB9001F8AC4 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A0632B5BCDB9001F8AC4 /* CharacterDetailView.swift */; };
 		F528A06B2B5BDB8D001F8AC4 /* CharacterGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A06A2B5BDB8D001F8AC4 /* CharacterGridItem.swift */; };
-		F528A0742B5BFE05001F8AC4 /* RickMortySwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = F528A0732B5BFE05001F8AC4 /* RickMortySwiftApi */; };
+		F53606E52B60473300D7F186 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53606E42B60473300D7F186 /* TabBar.swift */; };
 		F5364C0E2B5BB3D200D1E488 /* RickAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */; };
 		F5364C102B5BB3D200D1E488 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5364C0F2B5BB3D200D1E488 /* HomeView.swift */; };
 		F5364C122B5BB3D500D1E488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5364C112B5BB3D500D1E488 /* Assets.xcassets */; };
@@ -21,6 +21,7 @@
 		F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridView.swift; sourceTree = "<group>"; };
 		F528A0632B5BCDB9001F8AC4 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailView.swift; path = ../../../CharacterDetailView.swift; sourceTree = "<group>"; };
 		F528A06A2B5BDB8D001F8AC4 /* CharacterGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridItem.swift; sourceTree = "<group>"; };
+		F53606E42B60473300D7F186 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F5364C0A2B5BB3D200D1E488 /* RickApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAppApp.swift; sourceTree = "<group>"; };
 		F5364C0F2B5BB3D200D1E488 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F528A0742B5BFE05001F8AC4 /* RickMortySwiftApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +64,7 @@
 				F528A06A2B5BDB8D001F8AC4 /* CharacterGridItem.swift */,
 				F528A0632B5BCDB9001F8AC4 /* CharacterDetailView.swift */,
 				F5364C0F2B5BB3D200D1E488 /* HomeView.swift */,
+				F53606E42B60473300D7F186 /* TabBar.swift */,
 				F5364C112B5BB3D500D1E488 /* Assets.xcassets */,
 				F5364C132B5BB3D500D1E488 /* Preview Content */,
 			);
@@ -95,7 +96,6 @@
 			);
 			name = RickApp;
 			packageProductDependencies = (
-				F528A0732B5BFE05001F8AC4 /* RickMortySwiftApi */,
 			);
 			productName = RickApp;
 			productReference = F5364C0A2B5BB3D200D1E488 /* RickApp.app */;
@@ -159,6 +159,7 @@
 				F5364C0E2B5BB3D200D1E488 /* RickAppApp.swift in Sources */,
 				F528A06B2B5BDB8D001F8AC4 /* CharacterGridItem.swift in Sources */,
 				F528A0642B5BCDB9001F8AC4 /* CharacterDetailView.swift in Sources */,
+				F53606E52B60473300D7F186 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +374,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F528A0732B5BFE05001F8AC4 /* RickMortySwiftApi */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F528A0722B5BFE05001F8AC4 /* XCRemoteSwiftPackageReference "Rick-and-Morty-Swift-API" */;
-			productName = RickMortySwiftApi;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5364C022B5BB3D200D1E488 /* Project object */;
 }

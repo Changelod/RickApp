@@ -7,26 +7,28 @@
 
 import SwiftUI
 
-
 struct CharacterGridView: View {
-//    @ObservedObject var viewModel = HomeViewModel()
-    let columns = [GridItem(.flexible()) ,  GridItem(.flexible())]
+    @ObservedObject var viewModel = HomeViewModel()
     
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
+
     var body: some View {
-        VStack{
-        ScrollView{
-                LazyVGrid(columns: columns){
-                    Text("Hola")
-//                        ForEach(pokemonData) { pokemon in
-//                            NavigationLink(destination: PokemonFlutterDetail(pokemon: pokemon)) {
-//                                PokemonFlutterItem(pokemon: pokemon)
-//                            }
-//                        }
-                }.padding()
+            
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(viewModel.characters) { character in
+                        NavigationLink(destination: CharacterDetailView(character: character)) {
+                            CharacterGridItemView(character: character)
+                        }
+                    }
+                }
+                .padding()
             }
+           
+        .onAppear {
+            viewModel.getCharacters()
         }
     }
-    
 }
 
 #Preview {
@@ -40,9 +42,6 @@ struct CharacterGridView: View {
 //            }
 
 
-#Preview {
-    HomeView()
-}
 
 
 
