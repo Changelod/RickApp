@@ -19,7 +19,7 @@ struct TabBar: View {
                 
                 HomeView()
                     .tabItem {
-                        Label("Locations", systemImage: "cat")
+                        Label("Locationsprueba", systemImage: "cat")
                     }
                 
                 HomeView()

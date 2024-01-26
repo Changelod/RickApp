@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06F1F642B61A50700B6FDC7 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F1F632B61A50700B6FDC7 /* CharacterDetailView.swift */; };
 		F528A0622B5BC2A2001F8AC4 /* CharacterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */; };
-		F528A0642B5BCDB9001F8AC4 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A0632B5BCDB9001F8AC4 /* CharacterDetailView.swift */; };
 		F528A06B2B5BDB8D001F8AC4 /* CharacterGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528A06A2B5BDB8D001F8AC4 /* CharacterGridItem.swift */; };
 		F53606E52B60473300D7F186 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53606E42B60473300D7F186 /* TabBar.swift */; };
 		F5364C0E2B5BB3D200D1E488 /* RickAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A06F1F632B61A50700B6FDC7 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridView.swift; sourceTree = "<group>"; };
-		F528A0632B5BCDB9001F8AC4 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailView.swift; path = ../../../CharacterDetailView.swift; sourceTree = "<group>"; };
 		F528A06A2B5BDB8D001F8AC4 /* CharacterGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridItem.swift; sourceTree = "<group>"; };
 		F53606E42B60473300D7F186 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F5364C0A2B5BB3D200D1E488 /* RickApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +62,7 @@
 				F5364C0D2B5BB3D200D1E488 /* RickAppApp.swift */,
 				F528A0612B5BC2A1001F8AC4 /* CharacterGridView.swift */,
 				F528A06A2B5BDB8D001F8AC4 /* CharacterGridItem.swift */,
-				F528A0632B5BCDB9001F8AC4 /* CharacterDetailView.swift */,
+				A06F1F632B61A50700B6FDC7 /* CharacterDetailView.swift */,
 				F5364C0F2B5BB3D200D1E488 /* HomeView.swift */,
 				F53606E42B60473300D7F186 /* TabBar.swift */,
 				F5364C112B5BB3D500D1E488 /* Assets.xcassets */,
@@ -126,7 +126,6 @@
 			);
 			mainGroup = F5364C012B5BB3D200D1E488;
 			packageReferences = (
-				F528A0722B5BFE05001F8AC4 /* XCRemoteSwiftPackageReference "Rick-and-Morty-Swift-API" */,
 			);
 			productRefGroup = F5364C0B2B5BB3D200D1E488 /* Products */;
 			projectDirPath = "";
@@ -157,8 +156,8 @@
 				F528A0622B5BC2A2001F8AC4 /* CharacterGridView.swift in Sources */,
 				F5364C102B5BB3D200D1E488 /* HomeView.swift in Sources */,
 				F5364C0E2B5BB3D200D1E488 /* RickAppApp.swift in Sources */,
+				A06F1F642B61A50700B6FDC7 /* CharacterDetailView.swift in Sources */,
 				F528A06B2B5BDB8D001F8AC4 /* CharacterGridItem.swift in Sources */,
-				F528A0642B5BCDB9001F8AC4 /* CharacterDetailView.swift in Sources */,
 				F53606E52B60473300D7F186 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,17 +362,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F528A0722B5BFE05001F8AC4 /* XCRemoteSwiftPackageReference "Rick-and-Morty-Swift-API" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/benjaminbruch/Rick-and-Morty-Swift-API";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = F5364C022B5BB3D200D1E488 /* Project object */;
 }

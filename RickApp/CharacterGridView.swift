@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CharacterGridView: View {
+  
     @ObservedObject var viewModel = HomeViewModel()
     
     let columns = [GridItem(.flexible()), GridItem(.flexible())]

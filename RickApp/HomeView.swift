@@ -15,7 +15,6 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-         
                 VStack {
                     if showImage {
                         Image("RickLogo")
@@ -124,7 +123,9 @@ class HomeViewModel: ObservableObject {
                     print("Error: \(error)")
                 }
             }, receiveValue: { [weak self] response in
+                print("response \(response)")
                 self?.characters = response
+                self?.characters.forEach { print($0.character.origin.name)}
             })
             .store(in: &cancellables)
     }
@@ -144,8 +145,18 @@ struct CharacterInformationDTO: Decodable {
     var gender: String
     var species: String
     var status: String
-//    var origin: String
-//    var location: String
+    var origin: OriginDTO
+    var location: LocationDTO
+}
+
+struct LocationDTO: Decodable {
+    var name: String
+    var url: String
+}
+
+struct OriginDTO: Decodable {
+    var name: String
+    var url: String
 }
 
 

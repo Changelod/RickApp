@@ -49,23 +49,10 @@ struct CharacterGridItemView: View {
 }
 
 
-//struct CharacterGridItemView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let characterInfoDTO = CharacterInformationDTO( name: "Rick", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!)
-//        let character = Character(character: characterInfoDTO)
-//        
-//        return CharacterGridItemView(character: character)
-//            .padding()
-//    }
-//}
+
 
 #Preview {
-    CharacterGridItemView(character: Character(character: CharacterInformationDTO(name: "Rick", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!, gender: "pro" , species: "pro", status: "alive")))
+    CharacterGridItemView(character: Character(character: CharacterInformationDTO(name: "Rick", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!, gender: "pro" , species: "pro", status: "alive", origin: OriginDTO(name: "test", url: "test"), location: LocationDTO(name: "test", url: "test") )))
 }
 
 
-//struct ItemApi: Identifiable{
-//    var id = UUID()
-//    let photoUrl: URL
-//    let title : String
-//}
