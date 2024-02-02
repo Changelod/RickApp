@@ -11,10 +11,10 @@ import Combine
 struct HomeView: View {
     @State private var showImage = true
     @StateObject var viewModel = HomeViewModel()
-    @State private var lastOffset: CGFloat = 0
 
     var body: some View {
         NavigationView {
+            ScrollView{
                 VStack {
                     if showImage {
                         Image("RickLogo")
@@ -23,48 +23,19 @@ struct HomeView: View {
                             .padding(10)
                         Spacer()
                     }
-                    
                     Text("Characters")
                         .font(.title)
                         .bold()
-                    
                     CharacterGridView(viewModel: viewModel)
                         .onTapGesture {
                             showImage = false
                         }
-                        .gesture(DragGesture().onChanged { value in
-                            let offsetY = value.translation.height
-                            
-                            // Se ejecuta cuando se detecta un cambio en el gesto de desplazamiento
-                            if offsetY > 0 {
-                                // Hacia abajo, ocultar la imagen
-                                showImage = true
-                            } else {
-                                // Hacia arriba, mostrar la imagen
-                                showImage = false
-                            }
-                        }.onEnded { value in
-                            let offsetY = value.translation.height
-                            
-                            // Se ejecuta cuando se ha levantado el dedo después de desplazarse
-                            if offsetY < 0 {
-                                // Si el desplazamiento fue hacia arriba, mostrar la imagen
-                                showImage = true
-                            }
-                        })
-                    
-                    
-                    
-                    
-                    
-                }
             }
-            
+                }.background(Color(red: 242/255, green: 240/255, blue: 230/255))
+            }
             .onAppear {
                 viewModel.getCharacters()
-                
             }
-        
     }
 }
 
@@ -78,15 +49,12 @@ struct Character: Identifiable {
     var title: String {
         return character.name
     }
-    
     var gender: String {
         return character.gender
     }
-    
     var species: String {
         return character.species
     }
-    
     var status: String {
         return character.status
     }
@@ -98,10 +66,7 @@ struct Character: Identifiable {
 //    var location: String {
 //        return character.location
 //    }
-//    
-    
-    
-    
+//
 }
 
 class HomeViewModel: ObservableObject {
@@ -159,14 +124,8 @@ struct OriginDTO: Decodable {
     var url: String
 }
 
-
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
-
-
-
-
-

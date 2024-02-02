@@ -2,7 +2,7 @@
 //  TabBar.swift
 //  RickApp
 //
-//  Created by Angelo Chavez on 23/01/24.
+//  Created by Angelo Pozo on 23/01/24.
 //
 
 
@@ -29,7 +29,6 @@ struct TabBar: View {
                
             }
         }
-
     }
 }
 

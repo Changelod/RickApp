@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct CharacterGridView: View {
-  
     @ObservedObject var viewModel = HomeViewModel()
+    let columns = [GridItem(.flexible())]
     
-    let columns = [GridItem(.flexible()), GridItem(.flexible())]
-
     var body: some View {
-            
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(viewModel.characters) { character in
@@ -23,9 +20,9 @@ struct CharacterGridView: View {
                         }
                     }
                 }
-                .padding()
+                .padding([.horizontal, .bottom])
             }
-           
+        .background(Color(red: 242/255, green: 240/255, blue: 230/255))
         .onAppear {
             viewModel.getCharacters()
         }
@@ -35,24 +32,6 @@ struct CharacterGridView: View {
 #Preview {
     CharacterGridView()
 }
-
-
-
-//            .onAppear {
-//                viewModel.getStories()
-//            }
-
-
-
-
-
-//
-//
-//
-//
-//
-
-
 
 
 
